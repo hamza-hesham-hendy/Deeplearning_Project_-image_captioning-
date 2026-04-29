@@ -130,7 +130,3 @@ For each timestep t:
 - **Overfitting**: Attention models showed mild overfitting after ~10 epochs (train loss continuing to decrease while validation loss plateaued), addressed with dropout (0.4) and early stopping.
 
 ---
-
-## 📝 License
-
-This project is for educational purposes.
