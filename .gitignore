@@ -1,0 +1,35 @@
+# Dataset — too large for Git
+flickr8k/
+
+# Saved model checkpoints (large binary files)
+saved_models/
+
+# Weights & Biases logs
+wandb/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+netrc.txt
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
