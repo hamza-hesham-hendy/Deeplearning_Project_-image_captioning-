@@ -94,28 +94,30 @@ For each timestep t:
 
 ## 🚀 How to Reproduce
 
-1. **Clone the repository**
+1. **Clone the repository** (includes trained model checkpoints via Git LFS)
    ```bash
-   git clone <repo-url>
-   cd deeplearning
+   git lfs install
+   git clone https://github.com/hamza-hesham-hendy/Deeplearning_Project_-image_captioning-.git
+   cd Deeplearning_Project_-image_captioning-
    ```
 
-2. **Configure Kaggle API credentials**
-   The dataset is downloaded automatically by the first notebook. Ensure your Kaggle API token (`kaggle.json`) is in place:
-   ```bash
-   pip install kaggle
-   # Place your kaggle.json in ~/.kaggle/ (Linux/Mac) or %USERPROFILE%\.kaggle\ (Windows)
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    pip install torch torchvision numpy pandas matplotlib seaborn wordcloud tqdm nltk wandb pillow
    ```
 
-4. **Run the notebooks in order**
-   - `01_eda.ipynb` — **Automatically downloads Flickr8k** if not present, then preprocesses data and saves artifacts
-   - `02_modelling.ipynb` — Train all models
+3. **Run evaluation directly**
+   Since pretrained model checkpoints are included in `saved_models/`, you can skip training and go straight to:
    - `03_model_analysis.ipynb` — Evaluate, visualize, and analyze errors
+
+4. *(Optional)* **Retrain from scratch**
+   If you want to reproduce the full pipeline, configure your Kaggle API credentials and run all notebooks in order:
+   ```bash
+   pip install kaggle
+   # Place your kaggle.json in ~/.kaggle/ (Linux/Mac) or %USERPROFILE%\.kaggle\ (Windows)
+   ```
+   - `01_eda.ipynb` — Automatically downloads Flickr8k, preprocesses data and saves artifacts
+   - `02_modelling.ipynb` — Train all models
 
 ---
 

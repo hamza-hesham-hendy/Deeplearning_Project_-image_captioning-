@@ -1,8 +1,8 @@
 # Dataset — too large for Git
 flickr8k/
 
-# Saved model checkpoints (large binary files)
-saved_models/
+# Saved model checkpoints (tracked via Git LFS)
+# saved_models/
 
 # Weights & Biases logs
 wandb/
