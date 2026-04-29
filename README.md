@@ -100,10 +100,11 @@ For each timestep t:
    cd deeplearning
    ```
 
-2. **Download the Flickr8k dataset**
+2. **Configure Kaggle API credentials**
+   The dataset is downloaded automatically by the first notebook. Ensure your Kaggle API token (`kaggle.json`) is in place:
    ```bash
    pip install kaggle
-   kaggle datasets download -d adityajn105/flickr8k -p flickr8k --unzip
+   # Place your kaggle.json in ~/.kaggle/ (Linux/Mac) or %USERPROFILE%\.kaggle\ (Windows)
    ```
 
 3. **Install dependencies**
@@ -112,7 +113,7 @@ For each timestep t:
    ```
 
 4. **Run the notebooks in order**
-   - `01_eda.ipynb` — Preprocess data and save artifacts
+   - `01_eda.ipynb` — **Automatically downloads Flickr8k** if not present, then preprocesses data and saves artifacts
    - `02_modelling.ipynb` — Train all models
    - `03_model_analysis.ipynb` — Evaluate, visualize, and analyze errors
 
